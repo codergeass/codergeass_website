@@ -1,0 +1,554 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+	display: block
+}
+
+audio, canvas, video {
+	display: inline-block
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+
+[hidden] {
+	display: none
+}
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+a:focus {
+	outline: thin dotted
+}
+
+a:active, a:hover {
+	outline: 0
+}
+
+h1 {
+	font-size: 2em
+}
+
+abbr[title] {
+	border-bottom: 1px dotted
+}
+
+b, strong {
+	font-weight: bold
+}
+
+dfn {
+	font-style: italic
+}
+
+mark {
+	background: #ff0;
+	color: #000
+}
+
+code, kbd, pre, samp {
+	font-family: monospace, serif;
+	font-size: 1em
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word
+}
+
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+	font-size: 80%
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sup {
+	top: -0.5em
+}
+
+sub {
+	bottom: -0.25em
+}
+
+img {
+	border: 0
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+figure {
+	margin: 0
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+
+legend {
+	border: 0;
+	padding: 0
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0
+}
+
+button, input {
+	line-height: normal
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+button[disabled], input[disabled] {
+	cursor: default
+}
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.highlight {
+	background-color: #002b37;
+	border: 1px dotted #002b37;
+	color: #8fa2a2;
+	padding: 10px;
+	overflow: auto;
+	margin: 12px 0;
+	border-radius: 4px
+}
+
+.highlight pre {
+	margin: 0;
+	padding: 0
+}
+
+span.highlight {
+	white-space: pre;
+	border: 0;
+	padding: 2px
+}
+
+table.highlight {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 2px
+}
+
+table.highlight td {
+	padding: 2px 4px;
+	vertical-align: top
+}
+
+.highlight .line-numbers {
+	background-color: #d5f6f6;
+	color: gray;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none
+}
+
+.highlight .line-numbers a {
+	background-color: #d5f6f6!important;
+	color: gray!important;
+	text-decoration: none!important
+}
+
+.highlight .line-numbers a:target {
+	color: blue!important
+}
+
+.highlight .line-numbers .highlighted {
+	color: red!important
+}
+
+.highlight .line-numbers .highlighted a {
+	color: red!important
+}
+
+.highlight span.line-numbers {
+	padding: 0 4px
+}
+
+.highlight .line {
+	display: block;
+	float: left;
+	width: 100%
+}
+
+.highlight .code {
+	width: 100%
+}
+
+.highlight .debug {
+	color: white!important;
+	background: blue!important
+}
+
+.highlight .keyword {
+	color: #fff;
+	font-weight: bold
+}
+
+.highlight .class, .highlight .constant {
+	color: #b48c00;
+	font-weight: bold
+}
+
+.highlight .predefined-constant, .highlight .string, .highlight .regexp, .highlight .symbol {
+	color: #00a89b;
+	font-weight: bold
+}
+
+.highlight .string>.delimiter, .highlight .string>.inline>.inline-delimiter, .highlight .regexp>.delimiter, .highlight .regexp>.modifier {
+	color: #e40000
+}
+
+.highlight .function {
+	color: #0086d8;
+	font-weight: bold
+}
+
+.highlight .instance-variable {
+	color: #1f87d2;
+	font-weight: bold
+}
+
+.highlight .doctype {
+	color: #586e75;
+	font-style: italic
+}
+
+.highlight .tag {
+	color: #258bd2;
+	font-weight: bold
+}
+
+.highlight .attribute-name {
+	color: #647b83;
+	font-weight: bold
+}
+
+code, kbd, pre, samp {
+	font-family: "Courier New", "Nimbus Mono L", "Courier", monospace;
+	text-shadow: none
+}
+
+code {
+	color: #002b37;
+	font-weight: bold;
+	/*background-color: #002b37;*/
+	background-color: #f77485;
+	padding: 2px 4px;
+	border-radius: 4px
+}
+
+.highlight code {
+	color: #002b37;
+	font-weight: bold;
+	background-color: #002b37;
+	padding: 2px 4px;
+	border-radius: 4px
+}
+
+.clear {
+	clear: both
+}
+
+a {
+	color: #4183c4;
+	text-decoration: none
+}
+
+a:hover {
+	color: #e95f73;
+	text-decoration: underline
+}
+
+hr {
+	background-color: #b3b3b3;
+	border: 0;
+	height: 1px;
+	width: 100%;
+	margin: 20px auto
+}
+
+hr.light {
+	border-top: 1px dotted #bfbfbf;
+	border-bottom: 1px dotted white;
+	max-width: 95%;
+	min-width: 150px;
+	height: 0;
+	background-color: transparent
+}
+
+h1, h2, h3 {
+	font-family: "Georgia", "Times", serif;
+	font-weight: normal;
+	margin: 0 0 10px 0
+}
+
+h1 a, h2 a, h3 a {
+	color: #000
+}
+
+h1 {
+	text-align: center
+}
+
+h1, h2 {
+	font-size: 1.4em
+}
+
+h2 {
+	margin-top: 30px
+}
+
+h3 {
+	font-size: 1.15em
+}
+
+html, body {
+	color: black;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 1.5em;
+	background-color: white
+}
+
+body {
+	padding: 0;
+	max-width: 720px;
+	min-width: 300px;
+	margin: 0 auto
+}
+
+header, article, footer, .recent-articles {
+	margin: 0 25px
+}
+
+body>div {
+	padding: 0;
+	margin: 10px;
+	-webkit-box-shadow: 0 0 4em #777
+}
+
+body>div>header {
+	padding-top: 15px;
+	margin-top: 12px;
+	margin-bottom: -8px
+}
+
+body>div>header .brand {
+	float: right;
+	display: block;
+	font-family: "Georgia", "Times", serif;
+	font-size: 16px;
+	color: #e8102d
+}
+
+body>div>header nav {
+	float: left;
+	text-align: right
+}
+
+@media handheld, only screen and (max-width:480px), only screen and (max-device-width:320px) {
+	body>div>header .brand, body>div>header nav {
+		float: none;
+		text-align: center
+	}
+	body>div>header nav {
+		padding-top: 10px
+	}
+}
+
+footer {
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 20px
+}
+
+body>div>footer .copyright {
+	font-family: "Georgia", "Times", serif;
+	color: #333
+}
+
+body>div>footer .updatetime {
+	display: block;
+	font-family: "Georgia", "Times", serif;
+	color: #333
+}
+
+footer .rss {
+	background: url("/assets/images/rss.png") right center no-repeat;
+	padding-right: 14px
+}
+
+article {
+	position: relative
+}
+
+article>header {
+	text-align: center
+}
+
+article>header .about {
+	text-transform: uppercase
+}
+
+article>header .about .label {
+	text-transform: none;
+	font-size: .84em;
+	font-style: italic;
+	padding-right: .3em;
+	padding-left: .3em
+}
+
+article>header .about .author a {
+	font-weight: bold;
+	letter-spacing: .2em
+}
+
+article>header .about .date .month {
+	font-size: .84em;
+	letter-spacing: .3em
+}
+
+article>header .about .date .year {
+	font-size: .9em
+}
+
+article>header h1 {
+	font: 1.8em "Georgia", "Times", serif;
+	margin: 30px 0 10px 0
+}
+
+article img {
+	width: 100%;
+	max-width: 700px
+}
+
+article .addthis_toolbox {
+	position: absolute
+}
+
+article .addthis_toolbox.affix {
+	position: fixed;
+	top: 0
+}
+
+article .addthis_floating_style {
+	background-color: white
+}
+
+article .track {
+	height: 100%;
+	width: 46px;
+	position: absolute;
+	right: -70px;
+	top: 0
+}
+
+@media handheld, only screen and (max-width:450px), only screen and (max-device-width:450px) {
+	article header .about .author, article header .about .date {
+		display: block
+	}
+}
+
+.recent-articles h4 {
+	text-align: center
+}
+
+.recent-articles ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+
+.recent-articles ul li {
+	text-align: center;
+	margin-bottom: 10px
+}
+
+.recent-articles ul li .date {
+	color: #999
+}
+
+ul.articles {
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+
+ul.articles li {
+	margin-bottom: 18px
+}
+
+ul.articles li h2 {
+	display: inline
+}
+
+ul.articles li .date {
+	color: #999
+}
+
+ul.articles li .summary {
+	margin: 10px 0
+}
